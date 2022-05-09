@@ -1,136 +1,10 @@
+---
+layout: default
+---
 <!DOCTYPE html>
 <html lang="" xml:lang="">
-<head>
 
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>2 C.elegans plate experiment | Data sciences portfolio Pedro de Bos</title>
-  <meta name="description" content="2 C.elegans plate experiment | Data sciences portfolio Pedro de Bos" />
-  <meta name="generator" content="bookdown 0.26 and GitBook 2.6.7" />
-
-  <meta property="og:title" content="2 C.elegans plate experiment | Data sciences portfolio Pedro de Bos" />
-  <meta property="og:type" content="book" />
-  
-  
-  
-
-  <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="2 C.elegans plate experiment | Data sciences portfolio Pedro de Bos" />
-  
-  
-  
-
-<meta name="author" content="Pedro de Bos" />
-
-
-<meta name="date" content="2022-05-07" />
-
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
-  
-  
-<link rel="prev" href="index.html"/>
-<link rel="next" href="sorting-directories.html"/>
-<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
-<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
-<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
-
-
-
-
-
-
-
-
-<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
-<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
-<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
-<script src="libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
-<link href="libs/datatables-css-0.0.0/datatables-crosstalk.css" rel="stylesheet" />
-<script src="libs/datatables-binding-0.22/datatables.js"></script>
-<link href="libs/dt-core-1.11.3/css/jquery.dataTables.min.css" rel="stylesheet" />
-<link href="libs/dt-core-1.11.3/css/jquery.dataTables.extra.css" rel="stylesheet" />
-<script src="libs/dt-core-1.11.3/js/jquery.dataTables.min.js"></script>
-<link href="libs/crosstalk-1.2.0/css/crosstalk.min.css" rel="stylesheet" />
-<script src="libs/crosstalk-1.2.0/js/crosstalk.min.js"></script>
-
-
-<style type="text/css">
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-    color: #aaaaaa;
-  }
-pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
-code span.al { color: #ff0000; font-weight: bold; } /* Alert */
-code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
-code span.at { color: #7d9029; } /* Attribute */
-code span.bn { color: #40a070; } /* BaseN */
-code span.bu { } /* BuiltIn */
-code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
-code span.ch { color: #4070a0; } /* Char */
-code span.cn { color: #880000; } /* Constant */
-code span.co { color: #60a0b0; font-style: italic; } /* Comment */
-code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
-code span.do { color: #ba2121; font-style: italic; } /* Documentation */
-code span.dt { color: #902000; } /* DataType */
-code span.dv { color: #40a070; } /* DecVal */
-code span.er { color: #ff0000; font-weight: bold; } /* Error */
-code span.ex { } /* Extension */
-code span.fl { color: #40a070; } /* Float */
-code span.fu { color: #06287e; } /* Function */
-code span.im { } /* Import */
-code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
-code span.kw { color: #007020; font-weight: bold; } /* Keyword */
-code span.op { color: #666666; } /* Operator */
-code span.ot { color: #007020; } /* Other */
-code span.pp { color: #bc7a00; } /* Preprocessor */
-code span.sc { color: #4070a0; } /* SpecialChar */
-code span.ss { color: #bb6688; } /* SpecialString */
-code span.st { color: #4070a0; } /* String */
-code span.va { color: #19177c; } /* Variable */
-code span.vs { color: #4070a0; } /* VerbatimString */
-code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
-</style>
-
-
-</head>
-
-<body>
+<body>  
 
 
 
@@ -163,7 +37,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
             <section class="normal" id="section-">
 <div id="c.elegans-plate-experiment" class="section level1 hasAnchor" number="2">
 <h1><span class="header-section-number">2</span> C.elegans plate experiment<a href="c.elegans-plate-experiment.html#c.elegans-plate-experiment" class="anchor-section" aria-label="Anchor link to header"></a></h1>
-<p>In this RMD, a excel data sheet supplied by J. louter (INT/ILC), derrived from a experiment in which adult C.elegans were exposed to varying concentrations of different compounds. In this RMD, a dose-response curve shall be created.</p>
+<p>In this (TEST TEXT 7) RMD, a excel data sheet supplied by J. louter (INT/ILC), derrived from a experiment in which adult C.elegans were exposed to varying concentrations of different compounds. In this RMD, a dose-response curve shall be created.</p>
 <p>First off, the data stored in an excel file shall be read</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="c.elegans-plate-experiment.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># CREATE A PROPER TABLE TO SHOWCASE THIS DATA, AND THE FINAL TIDY DATA</span></span>
 <span id="cb1-2"><a href="c.elegans-plate-experiment.html#cb1-2" aria-hidden="true" tabindex="-1"></a>excel_location<span class="ot">&lt;-</span><span class="fu">here</span>(<span class="st">&quot;data.raw/CE.LIQ.FLOW.062_Tidydata.xlsx&quot;</span>)</span>
@@ -220,7 +94,7 @@ expType: The type of experiment (Experimental, control)</p>
 <span id="cb3-8"><a href="c.elegans-plate-experiment.html#cb3-8" aria-hidden="true" tabindex="-1"></a>    <span class="at">colour=</span><span class="st">&quot;Treatment&quot;</span>,</span>
 <span id="cb3-9"><a href="c.elegans-plate-experiment.html#cb3-9" aria-hidden="true" tabindex="-1"></a>    <span class="at">shape=</span><span class="st">&quot;Experiment type&quot;</span></span>
 <span id="cb3-10"><a href="c.elegans-plate-experiment.html#cb3-10" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div>
-<p><img src="_main_files/figure-html/dataplots-1.png" width="672" /></p>
+<p><img src="images/dataplots-1.png" width="672" /></p>
 <p>To properly be able to study the effect of the different treatments on C.elegans, the data will be normalised for the negative control S-medium.</p>
 <div class="sourceCode" id="cb4"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb4-1"><a href="c.elegans-plate-experiment.html#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Determine the mean of the negative control</span></span>
 <span id="cb4-2"><a href="c.elegans-plate-experiment.html#cb4-2" aria-hidden="true" tabindex="-1"></a>negctrl_mean<span class="ot">&lt;-</span>Celegans_data_select<span class="sc">$</span>RawData[Celegans_data_select<span class="sc">$</span>expType<span class="sc">==</span><span class="st">&quot;controlNegative&quot;</span>] <span class="sc">%&gt;%</span> <span class="fu">mean</span>()</span>
@@ -241,7 +115,7 @@ expType: The type of experiment (Experimental, control)</p>
 <span id="cb4-17"><a href="c.elegans-plate-experiment.html#cb4-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">colour=</span><span class="st">&quot;Treatment&quot;</span>,</span>
 <span id="cb4-18"><a href="c.elegans-plate-experiment.html#cb4-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">shape=</span><span class="st">&quot;Experiment type&quot;</span></span>
 <span id="cb4-19"><a href="c.elegans-plate-experiment.html#cb4-19" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div>
-<p><img src="_main_files/figure-html/normalisingDataForNegativeControl-1.png" width="672" /></p>
+<p><img src="images/normalisingDataForNegativeControl-1.png" width="672" /></p>
 <p>For a clearer picture of the correlations, a summarise version of the graph has also been made:</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="c.elegans-plate-experiment.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Creating a summarised version of the data based on Treatment and concentration</span></span>
 <span id="cb5-2"><a href="c.elegans-plate-experiment.html#cb5-2" aria-hidden="true" tabindex="-1"></a>Celegans_data_normalised_sum<span class="ot">&lt;-</span>Celegans_data_select_normalised <span class="sc">%&gt;%</span> <span class="fu">group_by</span>(compConcentration, compName) <span class="sc">%&gt;%</span> <span class="fu">summarise</span>(</span>
@@ -262,7 +136,7 @@ expType: The type of experiment (Experimental, control)</p>
 <span id="cb5-17"><a href="c.elegans-plate-experiment.html#cb5-17" aria-hidden="true" tabindex="-1"></a>    <span class="at">y=</span><span class="st">&quot;Normalised amount of offspring (%)&quot;</span>,</span>
 <span id="cb5-18"><a href="c.elegans-plate-experiment.html#cb5-18" aria-hidden="true" tabindex="-1"></a>    <span class="at">colour=</span><span class="st">&quot;Treatment&quot;</span></span>
 <span id="cb5-19"><a href="c.elegans-plate-experiment.html#cb5-19" aria-hidden="true" tabindex="-1"></a>  )</span></code></pre></div>
-<p><img src="_main_files/figure-html/ClearerGraph-1.png" width="672" /></p>
+<p><img src="images/ClearerGraph-1.png" width="672" /></p>
 <p>Based on these exploratory graphs, we can conclude that 2,6-diisopropylnaphthalene, decane and nephthalene all cause a decrease in the ammount of offspring generated by C.elegans. Decane only appears to decrease offspring at higher concentrations, 2,6-diisopropylnaphthalene seems to cause a relatively constant decrease in offspring at increasing concentrations, and nephthalene seems to stagnate untill extremely high concentrations are used.</p>
 <p>Based on this data, a LC-50 analysis could be performed.</p>
 
